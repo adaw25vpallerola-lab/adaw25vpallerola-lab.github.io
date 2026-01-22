@@ -1,1 +1,2 @@
-# adaw25vpallerola-lab.github.io
+theme: jekyll-theme-minimal
+title: Pagina Web Nacho de Victor y Marc
