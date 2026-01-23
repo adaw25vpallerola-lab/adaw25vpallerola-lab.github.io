@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Cabecera principal del sitio - SIN FONDO BLANCO */
+.cabecera {
+    background: linear-gradient(135deg, #0066b3 0%, #003366 100%);
+    color: white;
+    padding: 15px 0;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background-color: transparent; /* Sin fondo de burbuja */
+    border: none; /* Sin borde de burbuja */
+    border-radius: 0; /* Sin bordes redondeados */
+    display: block;
+}
+
+.menu a:hover {
+    background-color: transparent; /* Sin cambio de fondo en hover */
+    transform: none; /* Sin movimiento en hover */
+    box-shadow: none; /* Sin sombra en hover */
+    color: #e6f2ff; /* Solo cambio de color en hover */
+    text-decoration: underline;
+}
+
+/* Separador entre enlaces del menú */
+.menu li:not(:last-child) a::after {
+    content: " | ";
+    color: rgba(255, 255, 255, 0.4);
+    margin-left: 15px;
+}
+
+/* Contenido principal */
+.contenido {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+.contenido > header {
+    color: #333; 
+    padding: 20px 0; 
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #0066b3; 
+}
+
+.contenido > header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #003366; /* Color azul oscuro */
+
+    font-weight: 600;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Grid de atracciones */
+.atracciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.atraccion {
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.atraccion:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.atraccion h2 {
+    color: white;
+    padding: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* Imágenes representativas para cada atracción */
+.imagen {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.texto {
+    padding: 25px;
+    font-size: 1.05rem;
+    color: white; /* Texto en blanco para mejor contraste */
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+}
+
+
+/* Footer */
+.contenido footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.contenido footer p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
+    
